@@ -9,7 +9,7 @@
       }
       
       body{
-          background: #2268ff;
+          background: #434343;
       }
       
       header{
@@ -20,10 +20,11 @@
       
       header .nav-bar{
           position: relative;
-          background: rgba(255, 255, 255, 0.1);
+          background: rgba(255, 255, 255, 0.6);
           backdrop-filter: blur(55px);
           height: 4em;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+          border-radius: 0.2em;
           top: 0;
           left: 0;
           display: flex;
@@ -34,7 +35,7 @@
       }
       
       .nav-bar .logo{
-          color: #fff;
+          color: #555555;
           font-size: 1.8em;
           font-weight: 600;
           letter-spacing: 2px;
@@ -48,7 +49,7 @@
       }
       
       .navigation .nav-items a{
-          color: #fff;
+          color: #3b3b3b;
           font-size: 1em;
           text-decoration: none;
       }
@@ -77,6 +78,14 @@
           background-position: center;
           display: flex;
           justify-content: center;
+          align-items: center;
+      }
+
+      .homeshop {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
           align-items: center;
       }
       
