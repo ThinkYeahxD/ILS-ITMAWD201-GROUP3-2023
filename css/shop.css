@@ -140,7 +140,17 @@
       .navigation .nav-items a i{
           display: none;
       }
+      .nav-sort .navS-items a {
+        color: #3b3b3b;
+        font-size: 1.4em;
+        text-decoration: none;
+        text-align: center;
+        
+      }
+      .nav-sort .navS-items a:not(:last-child){
+        margin-right: 60px;
 
+      }
       section{
           position: relative;
           font-size: 1em;

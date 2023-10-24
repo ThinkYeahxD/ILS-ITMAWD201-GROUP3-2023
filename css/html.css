@@ -72,7 +72,7 @@
       .home{
           position: relative;
           min-height: 100vh;
-          background: url(https://media.discordapp.net/attachments/835547247860645939/1157647696631451728/logosomethingidk.jpg) no-repeat;
+         /* background: url(https://media.discordapp.net/attachments/835547247860645939/1157647696631451728/logosomethingidk.jpg) no-repeat;*/
           background-size: cover;
           background-position: center;
           display: flex;
