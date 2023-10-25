@@ -16,27 +16,27 @@
                   <div class="dropdown">
                       <a href="#" class="dropdown-toggle">Senior High</a>
                       <ul class="dropdown-content">
-                          <li><a href="#">Option 1</a></li>
-                          <li><a href="#">Option 2</a></li>
-                          <li><a href="#">Option 3</a></li>
+                          <a href="#">Option 1</a>
+                          <a href="#">Option 2</a>
+                          <a href="#">Option 3</a>
                       </ul>
                   </div>
           
                   <div class="dropdown">
                       <a href="#" class="dropdown-toggle">College</a>
                       <ul class="dropdown-content">
-                          <li><a href="#">Option 1</a></li>
-                          <li><a href="#">Option 2</a></li>
-                          <li><a href="#">Option 3</a></li>
+                          <a href="#">Option 1</a>
+                          <a href="#">Option 2</a>
+                          <a href="#">Option 3</a>
                       </ul>
                   </div>
           
                   <div class="dropdown">
                       <a href="#" class="dropdown-toggle">Accessories</a>
                       <ul class="dropdown-content">
-                          <li><a href="#">Option 1</a></li>
-                          <li><a href="#">Option 2</a></li>
-                          <li><a href="#">Option 3</a></li>
+                          <a href="#">Option 1</a>
+                          <a href="#">Option 2</a>
+                          <a href="#">Option 3</a>
                       </ul>
                   </div>
               </div>
@@ -55,14 +55,51 @@
         <div class="scroll-indicator-container">
         </div>
       </header>
-      
-      <section class="homeshop">
 
-        
+      
+      <section class="home">
+        <aside class="sidebar">
+          <h2>Filter</h2>
+          <ul>
+            <li><a href="#">Male</a></li>
+            <li><a href="#">Female</a></li>
+          </ul>
+          <h2>Sizes</h2>
+          <ul>
+            <li><a href="#">Small</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">XL</a></li>
+          </ul>
+        </aside>
+      
+        <div class="products">
+          <div class="product-box">
+            <img src="product-image.jpg" alt="Product Image">
+            <h3>Product Name</h3>
+            <p>Product description goes here.</p>
+            <span class="price">₱199.00</span>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+      
+          <div class="product-box">
+            <img src="product-image.jpg" alt="Product Image">
+            <h3>Product Name</h3>
+            <p>Product description goes here.</p>
+            <span class="price">₱199.00</span>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+      
+          <div class="product-box">
+            <img src="product-image.jpg" alt="Product Image">
+            <h3>Product Name</h3>
+            <p>Product description goes here.</p>
+            <span class="price">₱199.00</span>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
       </section>
-        
    
- 
+ <section class="border"></section>
 
       
 
@@ -71,7 +108,6 @@
       <footer class="footer">
         <div class="footer__addr">
           <h1 class="footer__logo">STI College </h1>
-              
           <h2>Contact</h2>
           
           <address>
@@ -153,35 +189,11 @@
           <p>&copy; ©2022 STI Education Services Group, Inc. All rights reserved</p>
           
           <div class="legal__links">
-            <span>Made with <span class="heart">❤️</span> from group 2</span>
+            <span>Made with <span class="heart">❤️</span> from group 3</span>
           </div>
         </div>
       </footer>
-      <script>
-        //Javacript for the scroll indicator bar
-        window.addEventListener("scroll", () => {
-          const indicatorBar = document.querySelector(".scroll-indicator-bar");
-    
-          const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
-          const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          const scrollValue = (pageScroll / height) * 100;
-    
-          indicatorBar.style.width = scrollValue + "%";
-        });
-    
-        //Responsive navigation menu toggle
-        const menuBtn = document.querySelector(".nav-menu-btn");
-        const closeBtn = document.querySelector(".nav-close-btn");
-        const navigation = document.querySelector(".navigation");
-    
-        menuBtn.addEventListener("click", () => {
-          navigation.classList.add("active");
-        });
-    
-        closeBtn.addEventListener("click", () => {
-          navigation.classList.remove("active");
-        });
-      </script>
+      <script type="text/javascript" src="scripts/index.js"></script>
     
     
 </body>
