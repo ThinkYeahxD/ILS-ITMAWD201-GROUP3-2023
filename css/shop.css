@@ -58,14 +58,35 @@
         top: 100%;
         left: 0;
     }
+    .dropdown-college {
+      position: relative;
+      display: inline-block;
+  }
+    .dropdown-toggle-college {
+      cursor: pointer;
+  }
+    .dropdown-content-college {
+      display: none;
+      position: absolute;
+      font-family: 'Poppins',sans-serif;
+      background-color: #f8f8f8;
+      min-width: 500px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      top: 100%;
+      left: 0;
+  }
+  .dropdown-college:hover .dropdown-content-college {
+    display: block;
+}
+  
     
     .dropdown:hover .dropdown-content {
         display: block;
     }
       .list--item {
-        width:25%;
+        width:50%;
         float:left;
-        padding:10px;
+        padding:20px;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;

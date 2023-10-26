@@ -20,5 +20,4 @@
 
   closeBtn.addEventListener("click", () => {
     navigation.classList.remove("active");
-    //hello from the laptop
   });
