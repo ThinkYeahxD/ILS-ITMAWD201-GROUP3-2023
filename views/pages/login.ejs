@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link type="text/css" href="css/login.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="nav-bar">   
+        <img src="img/logo.png" alt="Sti" class="imagelogo">
+      
+        <div class="navigation">
+          <div class="nav-items">
+            <a href="/shop">Shop now</a>
+            <a href="/login">Login</a>
+          </div>
+      </div>
+    </div>
+    <div class="scroll-indicator-container">
+    </div>
+  </header>
+
+  <section class="login">
+    <div class="container">
+      <form action="/login" method="post">
+          <h1>Login</h1>
+          <p id="error-name" style="color: red;"></p>
+          <div>
+            <label for="user">Username :</label>
+            <input id="user" type="text" name="userdata" placeholder="Username" required>
+          </div>
+          <p id="error-pass" style="color: red;"></p>
+          <div id="psw">
+            <label for="pass">Password :</label>
+            <input id="pass" name="password" type="password" placeholder="Password" required>
+            <i class="fas fa-eye-slash"></i>
+          </div>
+          <div class="login-signin-btn">
+            <button type="submit" id="submit" class="registerbtn">Login!</button>
+          </div>
+          <a href="/signup" class="reg">Register here!</a>
+        </form>
+      </div>
+    </section>
+
+
+    
+      <script src="https://kit.fontawesome.com/e391ce7786.js"></script>
+      <script type="text/javascript" src="scripts/login.js"></script>
+
+      <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">STI College </h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            Quirino Highway Corner Green Hights Subd, Novaliches, Quezon City, 1116 Metro Manila<br>
+                
+            <a class="footer__btn" href="mailto:sticlothesandaccessories@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Socials</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="https://www.youtube.com/user/STIdotEdu">Youtube</a>
+              </li>
+      
+              <li>
+                <a href="https://www.instagram.com/sti_college/">Instagram</a>
+              </li>
+              
+              <li>
+                <a href="https://twitter.com/sticollege">Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/sti.clothes.and.accessories">Facebook</a>
+              </li>
+            </ul>
+          </li>
+          
+         
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Service</a>
+              </li>
+              
+              <li>
+                <a href="#">Refund Policy</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; ©2022 STI Education Services Group, Inc. All rights reserved</p>
+          
+          <div class="legal__links">
+            <span>Made with <span class="heart">❤️</span> from group 3</span>
+          </div>
+        </div>
+      </footer>
+            <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
