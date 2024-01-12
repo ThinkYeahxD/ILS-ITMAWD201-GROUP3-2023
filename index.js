@@ -1,5 +1,6 @@
 const express = require('express');
 const collection = require("./config");
+const bcrypt = require('bcrypt');
 //const database = require("./coms");
 const app = express();
 app.use(express.json());
@@ -42,37 +43,49 @@ app.get('/signup', function(req, res) {
 
 //register function
 app.post("/signup", async (req, res) => {
+
   const data = {
-    name: req.body.userdata,
-    password: req.body.password
-  };
-
-  try {
-    const existingUser = await collection.findOne({ name: data.name });
-    if (existingUser) {
-      res.status(400).json({ error: 'User already exists' });
-      return;
-    }
-
-    const insertedUser = await collection.insertOne(data); // Use insertOne for single document
-    res.json({ message: 'Signup successful', user: insertedUser });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Internal server error' });
+      name: req.body.userdata,
+      password: req.body.password
   }
+
+  // Check if the username already exists in the database
+  const existingUser = await collection.findOne({ name: data.name });
+
+  if (existingUser) {
+      res.send('User already exists. Please choose a different username.');
+  } else {
+      // Hash the password using bcrypt
+      const saltRounds = 10; // Number of salt rounds for bcrypt
+      const hashedPassword = await bcrypt.hash(data.password, saltRounds);
+
+      data.password = hashedPassword; // Replace the original password with the hashed one
+
+      const datauser = await collection.insertMany(data);
+      console.log(datauser);
+      res.render('pages/login');
+  }
+
 });
-//login
+
+// Login user 
 app.post("/login", async (req, res) => {
   try {
-    const user = await collection.findOne({ name: req.body.userdata, password: req.body.password });
-    if (!user) {
-      res.render('pages/login', { error: 'Incorrect username or password' });
-    } else {
-      res.redirect('/shop');
-    }
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Internal server error' });
+      const check = await collection.findOne({ name: req.body.userdata });
+      if (!check) {
+        console.log("User name cannot found");
+      }
+      // Compare the hashed password from the database with the plaintext password
+      const isPasswordMatch = await bcrypt.compare(req.body.password, check.password);
+      if (!isPasswordMatch) {
+        console.log("wrong Password");
+      }
+      else {
+        res.render('pages/shop');
+      }
+  }
+  catch {
+    console.log("wrong Details");
   }
 });
 

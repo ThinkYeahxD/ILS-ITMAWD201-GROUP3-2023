@@ -12,7 +12,7 @@ icon.addEventListener('click', () => {
   }
 });
 
-
+/*
 document.addEventListener('DOMContentLoaded', function () {
   const errorMessageElement = document.getElementById('error-message');
 
@@ -22,5 +22,5 @@ document.addEventListener('DOMContentLoaded', function () {
     alert(`Login failed:`);
   }
 });
-
+*/
  

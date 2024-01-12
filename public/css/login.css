@@ -7,7 +7,7 @@
     font-family: 'Poppins',sans-serif;
 }
 body{
-  background: #ffffff;
+  background: #fff58a;
 }
 
 .login{
@@ -263,7 +263,6 @@ section{
 .footer__logo {
   font-family: 'Poppins',sans-serif;
   font-weight: 400;
-  text-transform: lowercase;
   font-size: 1.5rem;
 }
 

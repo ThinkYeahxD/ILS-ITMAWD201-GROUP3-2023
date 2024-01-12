@@ -9,7 +9,7 @@
 }
 
 body{
-  background: #ffffff;
+  background: #479dbc;
   font-family: 'Poppins',sans-serif;
   margin: 0;
   padding: 0;
@@ -18,11 +18,11 @@ body{
   flex-direction: column;  
 }
 .cart-link {
-  color: #fff;
+  color: #ae7e7e;
   text-decoration: none;
   padding: 10px 15px; /* Adjust for spacing */
   font-weight: bold;
-  background-color: #5d79c0;
+  background: rgb(250, 255, 150);
   border-radius: 3px;
 }
 
@@ -31,7 +31,8 @@ body{
 }
 
 .cart-link:hover {
-  background-color: #0069d9;
+  background-color: #479dbc;
+  transition: .3s;
 }
 .container{
   width: 1200px;
@@ -303,7 +304,7 @@ header{
 
 header .nav-bar{
   position: relative;
-  background: rgb(255, 255, 255);
+  background: rgb(250, 255, 150);
   height: 4em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 0.10em;
@@ -327,8 +328,8 @@ header .nav-bar{
 }
 
 .imagelogo{
-  width: 10.5em;
-  height: 5.5em;
+  width: 7em;
+  height:7em;
 }
 .navigation .nav-items a{
   color: #3b3b3b;
@@ -602,7 +603,6 @@ section{
 .footer__logo {
   font-family: 'Poppins',sans-serif;
   font-weight: 400;
-  text-transform: lowercase;
   font-size: 1.5rem;
 }
 

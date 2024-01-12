@@ -181,16 +181,9 @@
       }
 
       .home2 {
-        position: relative;
-        text-align: center;
-        color: #fff; /* Adjust the color to your preference */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url('/img/home.png'); 
-        height: 100vh; /* Adjust the height based on your design */
-      }
+ 
+        background-image: url('/img/final.png'); 
+        height: 80vh; /* Adjust the height based on your design *    }
       
       
       
@@ -415,7 +408,6 @@
       .footer__logo {
         font-family: 'Poppins',sans-serif;
         font-weight: 400;
-        text-transform: lowercase;
         font-size: 1.5rem;
       }
       

@@ -24,7 +24,7 @@
       
       header .nav-bar{
           position: relative;
-          background: rgba(255, 255, 255, 0.2);
+          background: rgb(243, 239, 153);
           height: 4em;
           border-bottom: 1px solid rgba(255, 255, 255, 0.6);
           border-radius: 0.4em;
@@ -99,8 +99,11 @@
       }
 
       .imagelogo{
-        width: 10.5em;
+        width: 7em;
         height: 5.5em;
+      }
+       a :hover {
+        color: #576b9f;
       }
       
       .navigation .nav-items a{
@@ -188,12 +191,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url('/img/home.png'); 
-        height: 100vh; /* Adjust the height based on your design */
+        background-image: url('/img/pinakalast.png'); 
+        background-size:205vh;
+        height: 105vh; /* Adjust the height based on your design */
       }
       
       
-      
+    
       .home2-message {
         position: absolute;
         top: 50%;
@@ -220,7 +224,7 @@
       .shop-now-button:hover {
         background-color: #2980b9; /* Adjust the hover background color to your preference */
       }
-
+      
       
       .home{
           position: relative;
@@ -415,7 +419,6 @@
       .footer__logo {
         font-family: 'Poppins',sans-serif;
         font-weight: 400;
-        text-transform: lowercase;
         font-size: 1.5rem;
       }
       
